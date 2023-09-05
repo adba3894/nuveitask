@@ -1,4 +1,26 @@
-# TC1:
+## Setup
+
+Install [Node](https://nodejs.org/) project dependencies:
+
+```Shell
+npm install
+```
+
+## Usage
+
+To run a test in background use a command:
+
+```Shell
+npx playwright test nuveiTask.spec.ts 
+```
+
+To run a test in UI use a command:
+
+```Shell
+npx playwright test --ui nuveiTask.spec.ts 
+```
+
+## Test Case
 
 1. Go to “https://nuvei.com”;
 2. Navigate to Solutions -> Platform integrations;
@@ -11,15 +33,3 @@ c. Location = Canada and Great Britain.
 6. Check that there are exactly 4 results displayed.
 7. Click on the third result;
 8. Verify that the title of the partner is “BigCommerce”.
-
-# To run a test in background use this command:
-
-```Shell
-npx playwright test nuveiTask.spec.ts 
-```
-
-# To run a test in UI use this command:
-
-```Shell
-npx playwright test --ui nuveiTask.spec.ts 
-```
